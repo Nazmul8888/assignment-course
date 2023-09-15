@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Introduction to OOP Python",
+      "imgage": "https://i.ibb.co/Dg07b7w/Rectangle-2.png",
+      "deatils": "details",
+      "price": 15000,
+      "credit": 5
+    },
+    {
+      "id": 2,
+      "name": "Database (MySQL)",
+      "imgage": "https://i.ibb.co/vJq1pVr/Rectangle-2-1.png",
+      "deatils": "details",
+      "price": 25000,
+      "credit": 5
+    },
+    {
+      "id": 3,
+      "name": "Introduction to C Programming",
+      "imgage": "https://i.ibb.co/J3xxBfx/Rectangle-2-2.png",
+      "deatils": "details",
+      "price": 10000,
+      "credit": 1
+    },
+    {
+     "id": 4,
+      "name": "Introduction to Algorithms",
+      "imgage": "https://i.ibb.co/s28Pzgj/Rectangle-2-3.png",
+      "deatils": "details",
+      "price": 35000,
+      "credit": 2
+    },
+    {
+     "id": 5,
+      "name": "Introduction to C++ for DSA",
+      "imgage": "https://i.ibb.co/Hz9j4dy/Rectangle-2-4.png",
+      "deatils": "details",
+      "price": 19000,
+      "credit": 10
+    },
+    {
+     "id": 6,
+      "name": "Software Engineering",
+      "imgage": "https://i.ibb.co/PTynR3r/Rectangle-2-5.pnge",
+      "deatils": "details",
+      "price": 23000,
+      "credit": 2
+    },
+    {
+      "id": 7,
+      "name": "Problem-Solving Part",
+      "imgage": "https://i.ibb.co/LQ1ZznB/Rectangle-2-6.png",
+      "deatils": "details",
+      "price": 45000,
+      "credit": 2
+    },
+    {
+     "id": 8,
+      "name": "Basic Data Structures",
+      "imgage": "https://i.ibb.co/hM2rFfh/Rectangle-3.png",
+      "deatils": "details",
+      "price": 19000,
+      "credit": 5
+    },
+    {
+     "id": 9,
+      "name": "AWS, Cloud Computing",
+      "imgage": "https://i.ibb.co/mtHWdLB/Rectangle-3-1.png",
+      "deatils": "details",
+      "price": 23000,
+      "credit": 2
+    }
+  ]
