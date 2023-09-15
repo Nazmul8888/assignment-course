@@ -35,7 +35,6 @@ const handelSelector = (card) => {
        setTotalCost(count);
        setRemaining(totalRemaining);
         setSelectedCards([...selectedCards,card]);
-        
     }
   
 };
