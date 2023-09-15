@@ -12,6 +12,7 @@ background: #FFF;
 .card-info{
     display: flex;
     justify-content: space-evenly;
+    
 }
 .btn{
 width: 280px;
