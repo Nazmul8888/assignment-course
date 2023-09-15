@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 import React from 'react';
@@ -6,7 +7,7 @@ import './Card.css';
 const Card = ({selectedCards,remaining,totalCost}) => {
     console.log(selectedCards);
     return (
-        <div >
+        <div className='box-card' >
            <h5>Course Name</h5> 
            {
             selectedCards.map(card=>(
