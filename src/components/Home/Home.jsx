@@ -7,6 +7,8 @@ import Card from './Card/Card';
 const Home = () => {
     const[allCards, setAllCards] = useState([]);
     const[selectedCards, setSelectedCards] = useState([]);
+    const [remaining, setRemaining] = useState(0);
+    const [totalCost, setTotalCost] = useState(0);
 
 
 
@@ -20,10 +22,18 @@ const Home = () => {
 const handelSelector = (card) => {
 
     const isExist = selectedCards.find((item)=>item.id == card.id);
+    let count = card.price
 
     if(isExist){
   return('booked');
     }else{
+
+        selectedCards.forEach((item)=>{
+            count+= item.price
+        });
+       const totalRemaining = 13- count;
+       setTotalCost(count);
+       setRemaining(totalRemaining);
         setSelectedCards([...selectedCards,card]);
     }
   
@@ -63,7 +73,12 @@ console.log(selectedCards);
                }
                </div>
                 <div className="cart">
-                  <Card selectedCards={selectedCards}></Card>
+                  <Card 
+                  selectedCards={selectedCards}
+                  remaining={remaining}
+                  totalCost={totalCost}
+
+                  ></Card>
                 </div>
 
               </div>

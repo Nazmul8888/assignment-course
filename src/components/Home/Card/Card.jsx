@@ -3,7 +3,7 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({selectedCards}) => {
+const Card = ({selectedCards,remaining,totalCost}) => {
     console.log(selectedCards);
     return (
         <div >
@@ -16,6 +16,9 @@ const Card = ({selectedCards}) => {
             ))
            }
            <hr />
+           <h5>Total Credit Hour:{remaining}</h5>
+           <hr />
+           <h5>Total Price:{totalCost}</h5>
         </div>
     );
 };
