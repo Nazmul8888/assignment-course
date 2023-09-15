@@ -9,6 +9,7 @@ const Home = () => {
     const[selectedCards, setSelectedCards] = useState([]);
     const [remaining, setRemaining] = useState(0);
     const [totalCost, setTotalCost] = useState(0);
+    const [totalHr, setTotalHr] = useState(0)
 
 
 
@@ -23,15 +24,21 @@ const handelSelector = (card) => {
 
     const isExist = selectedCards.find((item)=>item.id == card.id);
     let count = card.price
+    let credit_hr = 0
+    let total_hr = 0
 
     if(isExist){
-  return('booked');
+  alert ('booked')
     }else{
 
         selectedCards.forEach((item)=>{
             count+= item.price
+            credit_hr += item.credit
+            total_hr += item.credit
+
         });
-       const totalRemaining = 13- count;
+       const totalRemaining = 20- credit_hr;
+       setTotalHr(total_hr)
        setTotalCost(count);
        setRemaining(totalRemaining);
         setSelectedCards([...selectedCards,card]);
@@ -77,6 +84,7 @@ console.log(selectedCards);
                   selectedCards={selectedCards}
                   remaining={remaining}
                   totalCost={totalCost}
+                  totalHr={totalHr}
 
                   ></Card>
                 </div>

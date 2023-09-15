@@ -4,22 +4,24 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({selectedCards,remaining,totalCost}) => {
+const Card = ({selectedCards,remaining,totalCost, totalHr}) => {
     console.log(selectedCards);
     return (
         <div className='box-card' >
            <h5>Course Name</h5> 
            {
-            selectedCards.map(card=>(
-               <ol>
-                 <li>{card.name}</li>
+            selectedCards.map((card,index)=>(
+               <ol className=''>
+                 <li className='box'>{index+1} {card.name}</li>
                </ol>
             ))
            }
            <hr />
-           <h5>Total Credit Hour:{remaining}</h5>
+           <h5>Total Credit Hour remaining:{remaining}</h5>
            <hr />
            <h5>Total Price:{totalCost}</h5>
+           <h5>Total credit hr:{totalHr}</h5>
+
         </div>
     );
 };
